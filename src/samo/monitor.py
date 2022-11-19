@@ -1,20 +1,24 @@
 import json
-from pathlib import Path
 from typing import Any, Dict, List
 
-url = "https://get-ship-data.aephia.workers.dev/gm/ships"
+import requests
+
+aephie_ships_url = "https://get-ship-data.aephia.workers.dev/gm/ships"
 
 
 def main() -> None:
-    ships_str = Path("ships.json").read_text()
+    ships_str = fetch_ships()
     ships = json.loads(ships_str)
 
-    ships_str_formatted = json.dumps(ships, indent=2)
     pruned_ships = prune_non_relevant_fields(ships)
     pruned_ships_str_formatted = json.dumps(pruned_ships, indent=2)
 
-    print(ships_str_formatted)
     print(pruned_ships_str_formatted)
+
+
+def fetch_ships() -> str:
+    response = requests.get(aephie_ships_url)
+    return response.content.decode()
 
 
 def prune_non_relevant_fields(input: List[Dict[str, Any]]) -> List[Dict[str, Any]]:

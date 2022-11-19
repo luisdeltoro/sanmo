@@ -30,6 +30,7 @@ classifiers = [
 python = "^3.8, <3.12"
 rich = "*"
 typer = { version = "*", extras = ["all"] }
+requests = "^2.28.1"
 
 [tool.poetry.group.nox.dependencies]
 nox-poetry = "*"
@@ -37,6 +38,8 @@ nox-poetry = "*"
 [tool.poetry.group.test.dependencies]
 pytest = "*"
 pytest-cov = "*"
+types-requests = "^2.28.11.5"
+type-check = "^0.1.8"
 
 [tool.poetry.group.type_check.dependencies]
 mypy = "*"
