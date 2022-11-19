@@ -1,0 +1,296 @@
+[
+  {
+    "name": "VZUS opod",
+    "vwap": 1666.67,
+    "originationPrice": 1500,
+    "bestAsk": 533,
+    "askVsVwap": -68.02
+  },
+  {
+    "name": "Calico Guardian",
+    "vwap": 30883.91,
+    "originationPrice": 29985,
+    "bestAsk": 6500,
+    "askVsVwap": -78.95
+  },
+  {
+    "name": "Pearce F4",
+    "vwap": 2840.35,
+    "originationPrice": 2500,
+    "bestAsk": 599,
+    "askVsVwap": -78.91
+  },
+  {
+    "name": "Rainbow Om",
+    "vwap": 2807.16,
+    "originationPrice": 2400,
+    "bestAsk": 645,
+    "askVsVwap": -77.02
+  },
+  {
+    "name": "Pearce X5",
+    "vwap": 140.48,
+    "originationPrice": 135,
+    "bestAsk": 29.8,
+    "askVsVwap": -78.79
+  },
+  {
+    "name": "Fimbul BYOS Packlite",
+    "vwap": 3513.13,
+    "originationPrice": 3360,
+    "bestAsk": 665,
+    "askVsVwap": -81.07
+  },
+  {
+    "name": "Ogrika Thripid",
+    "vwap": 8506.43,
+    "originationPrice": 8170,
+    "bestAsk": 2500,
+    "askVsVwap": -70.61
+  },
+  {
+    "name": "Calico Compakt Hero",
+    "vwap": 3786.67,
+    "originationPrice": 3520,
+    "bestAsk": 795,
+    "askVsVwap": -79.01
+  },
+  {
+    "name": "VZUS ambwe",
+    "vwap": 1200,
+    "originationPrice": 1200,
+    "bestAsk": 176,
+    "askVsVwap": -85.33
+  },
+  {
+    "name": "Pearce X4",
+    "vwap": 22.66,
+    "originationPrice": 20,
+    "bestAsk": 4.65,
+    "askVsVwap": -79.48
+  },
+  {
+    "name": "Opal Jetjet",
+    "vwap": 308.91,
+    "originationPrice": 300,
+    "bestAsk": 40.499,
+    "askVsVwap": -86.89
+  },
+  {
+    "name": "Fimbul ECOS Greenader",
+    "vwap": 8603.14,
+    "originationPrice": 8200,
+    "bestAsk": 1445,
+    "askVsVwap": -83.2
+  },
+  {
+    "name": "Opal Jet",
+    "vwap": 20,
+    "originationPrice": 20,
+    "bestAsk": 2.63,
+    "askVsVwap": -86.85
+  },
+  {
+    "name": "Pearce R8",
+    "vwap": 11104.67,
+    "originationPrice": 10080,
+    "bestAsk": 1695,
+    "askVsVwap": -84.74
+  },
+  {
+    "name": "Pearce C9",
+    "vwap": 31829.19,
+    "originationPrice": 28900,
+    "bestAsk": 17000,
+    "askVsVwap": -46.59
+  },
+  {
+    "name": "Pearce C11",
+    "vwap": 90090.83,
+    "originationPrice": 80100,
+    "bestAsk": 23500,
+    "askVsVwap": -73.92
+  },
+  {
+    "name": "Ogrika Jod Asteris",
+    "vwap": 30920.58,
+    "originationPrice": 25000,
+    "bestAsk": 5700,
+    "askVsVwap": -81.57
+  },
+  {
+    "name": "Rainbow Chi",
+    "vwap": 995,
+    "originationPrice": 995,
+    "bestAsk": 155,
+    "askVsVwap": -84.42
+  },
+  {
+    "name": "Pearce X6",
+    "vwap": 930,
+    "originationPrice": 930,
+    "bestAsk": 143,
+    "askVsVwap": -84.62
+  },
+  {
+    "name": "Fimbul BYOS Earp",
+    "vwap": 895,
+    "originationPrice": 895,
+    "bestAsk": 125,
+    "askVsVwap": -86.03
+  },
+  {
+    "name": "Tufa Feist",
+    "vwap": 795,
+    "originationPrice": 795,
+    "bestAsk": 109.9,
+    "askVsVwap": -86.18
+  },
+  {
+    "name": "Calico Evac",
+    "vwap": 2601.1,
+    "originationPrice": 2200,
+    "bestAsk": 449,
+    "askVsVwap": -82.74
+  },
+  {
+    "name": "Fimbul ECOS Bombarella",
+    "vwap": 36563.69,
+    "originationPrice": 30000,
+    "bestAsk": 4840,
+    "askVsVwap": -86.76
+  },
+  {
+    "name": "Fimbul ECOS Treearrow",
+    "vwap": 105250,
+    "originationPrice": 99500,
+    "bestAsk": 24700,
+    "askVsVwap": -76.53
+  },
+  {
+    "name": "Fimbul Airbike",
+    "vwap": 16.5,
+    "originationPrice": 15,
+    "bestAsk": 2.4,
+    "askVsVwap": -85.45
+  },
+  {
+    "name": "Ogrika Mik",
+    "vwap": 770,
+    "originationPrice": 710,
+    "bestAsk": 185,
+    "askVsVwap": -75.97
+  },
+  {
+    "name": "Fimbul ECOS Unibomba",
+    "vwap": 35,
+    "originationPrice": 35,
+    "bestAsk": 12.4,
+    "askVsVwap": -64.57
+  },
+  {
+    "name": "Fimbul Lowbie",
+    "vwap": 60,
+    "originationPrice": 60,
+    "bestAsk": 18.95,
+    "askVsVwap": -68.42
+  },
+  {
+    "name": "Rainbow Arc",
+    "vwap": 13721.4,
+    "originationPrice": 12705,
+    "bestAsk": 3999,
+    "askVsVwap": -70.86
+  },
+  {
+    "name": "Busan Thrill of Life",
+    "vwap": 946,
+    "originationPrice": 946,
+    "bestAsk": 250,
+    "askVsVwap": -73.57
+  },
+  {
+    "name": "VZUS ballad",
+    "vwap": 33286,
+    "originationPrice": 30000,
+    "bestAsk": 6900,
+    "askVsVwap": -79.27
+  },
+  {
+    "name": "Opal Bitboat",
+    "vwap": 10728,
+    "originationPrice": 10080,
+    "bestAsk": 2790,
+    "askVsVwap": -73.99
+  },
+  {
+    "name": "Calico Medtech",
+    "vwap": 942.8,
+    "originationPrice": 860,
+    "bestAsk": 295.999,
+    "askVsVwap": -68.6
+  },
+  {
+    "name": "Calico ATS Enforcer",
+    "vwap": 2423,
+    "originationPrice": 2245,
+    "bestAsk": 515,
+    "askVsVwap": -78.75
+  },
+  {
+    "name": "Pearce R6",
+    "vwap": 1091.8,
+    "originationPrice": 1060,
+    "bestAsk": 650,
+    "askVsVwap": -40.47
+  },
+  {
+    "name": "Busan Maiden Heart",
+    "vwap": 32585.75,
+    "originationPrice": 29300,
+    "bestAsk": 29300,
+    "askVsVwap": -10.08
+  },
+  {
+    "name": "Ogrika Tursic",
+    "vwap": 2772,
+    "originationPrice": 2475,
+    "bestAsk": 2475,
+    "askVsVwap": -10.71
+  },
+  {
+    "name": "Fimbul Mamba",
+    "vwap": 1881,
+    "originationPrice": 1775,
+    "bestAsk": 1774.5,
+    "askVsVwap": -5.66
+  },
+  {
+    "name": "VZUS solos",
+    "vwap": 20,
+    "originationPrice": 20,
+    "bestAsk": 7.9,
+    "askVsVwap": -60.5
+  },
+  {
+    "name": "Fimbul BYOS Tankship",
+    "vwap": 102118.42,
+    "originationPrice": 97500,
+    "bestAsk": 97500,
+    "askVsVwap": -4.52
+  },
+  {
+    "name": "Ogrika Sunpaa",
+    "vwap": 10176,
+    "originationPrice": 9600,
+    "bestAsk": 9600,
+    "askVsVwap": -5.66
+  },
+  {
+    "name": "Pearce D9",
+    "vwap": 31043.48,
+    "originationPrice": 30000,
+    "bestAsk": 30000,
+    "askVsVwap": -3.36
+  }
+]
