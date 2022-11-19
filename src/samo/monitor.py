@@ -1,9 +1,13 @@
+from datetime import datetime
 import json
-from typing import Any, Dict, List
+import os
+from pathlib import Path
+from typing import Any, Dict, List, Optional
 
 import requests
 
 aephie_ships_url = "https://get-ship-data.aephia.workers.dev/gm/ships"
+store_dir = os.environ["HOME"] + "/samo_store"
 
 
 def main() -> None:
@@ -14,6 +18,7 @@ def main() -> None:
     pruned_ships_str_formatted = json.dumps(pruned_ships, indent=2)
 
     print(pruned_ships_str_formatted)
+    store(pruned_ships)
 
 
 def fetch_ships() -> str:
@@ -33,6 +38,12 @@ def prune_non_relevant_fields(input: List[Dict[str, Any]]) -> List[Dict[str, Any
         for x in input
     ]
     return pruned_input
+
+
+def store(ships_price_info: List[Dict[str, Optional[str]]]) -> None:
+    now = datetime.now()
+    file_name = now.strftime("%Y-%m-%d_%H:%M:%S.json")
+    Path(store_dir + "/" + file_name).write_text(json.dumps(ships_price_info))
 
 
 # Allow the script to be run standalone (useful during development).
