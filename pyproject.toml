@@ -1,9 +1,9 @@
 [tool.poetry]
 name = "samo"
 version = "1.0.0"
-description = "Star Atlast Price Monitor"
+description = "Star Atlas Price Monitor"
 authors = ["Luis del Toro <luisdeltoro@gmail.com>"]
-license = "MIT"
+license = "Apache-2.0"
 readme = "README.md"
 classifiers = [
     "Development Status :: 5 - Production/Stable",
@@ -38,16 +38,11 @@ nox-poetry = "*"
 [tool.poetry.group.test.dependencies]
 pytest = "*"
 pytest-cov = "*"
-types-requests = "^2.28.11.5"
 type-check = "^0.1.8"
 
 [tool.poetry.group.type_check.dependencies]
 mypy = "*"
-# As of mypy 0.900, mypy no longer bundles the stubs for third-party libraries that reside
-# in the typeshed project. Add these "types-" packages here if you depend on them in
-# requirements.in (e.g. types-requests).
-# See: http://mypy-lang.blogspot.com/2021/06/mypy-0900-released.html
-#      https://github.com/python/typeshed/tree/master/stubs
+types-requests = "^2.28.11.5"
 
 [tool.poetry.group.lint.dependencies]
 flake8 = "*"
