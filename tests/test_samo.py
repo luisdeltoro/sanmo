@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-from samo.monitor import prune_non_relevant_fields
+from sanmo.monitor import prune_non_relevant_fields
 
 
 def test_prune_non_relevant_fields() -> None:
