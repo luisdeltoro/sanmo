@@ -1,0 +1,9 @@
+#!/bin/bash
+
+VERSION=`cat pyproject.toml | grep -E "^version =" | sed 's/^version = "\([0-9\.]*\)".*$/\1/'`
+poetry build
+poetry run pip install --upgrade -t dist/package dist/*.whl
+cd dist/package
+zip -r ../lambda-$VERSION.zip . -x '*.pyc'
+cd ../..
+rm -rf dist/package

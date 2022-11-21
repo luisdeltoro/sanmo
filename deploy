@@ -1,0 +1,10 @@
+#!/bin/bash
+
+LAMDA_NAME: test-lambda-1
+LAMBDA_REGION: us-west-2
+S3_BUCKET: test-lambda-1
+S3_KEY_PREFIX: souce-code
+VERSION=`cat pyproject.toml | grep -E "^version =" | sed 's/^version = "\([0-9\.]*\)".*$/\1/'`
+
+aws s3 cp dist/lambda-${VERSION}.zip s3://${S3_BUCKET}/${S3_KEY_PREFIX}/${LAMDA_NAME}-${VERSION}.zip
+aws lambda --region $LAMBDA_REGION  update-function-code --function-name $LAMDA_NAME --s3-bucket $S3_BUCKET --s3-key ${S3_KEY_PREFIX}/${LAMDA_NAME}-${VERSION}.zip
