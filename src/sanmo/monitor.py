@@ -10,6 +10,13 @@ aephie_ships_url = "https://get-ship-data.aephia.workers.dev/gm/ships"
 store_dir = os.environ["HOME"] + "/samo_store"
 
 
+def lambda_handler(event, context):
+    ships_str = fetch_ships()
+    ships = json.loads(ships_str)
+    pruned_ships = prune_non_relevant_fields(ships)
+    return pruned_ships
+
+
 def main() -> None:
     ships_str = fetch_ships()
     ships = json.loads(ships_str)

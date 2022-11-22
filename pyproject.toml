@@ -38,7 +38,6 @@ nox-poetry = "*"
 [tool.poetry.group.test.dependencies]
 pytest = "*"
 pytest-cov = "*"
-type-check = "^0.1.8"
 
 [tool.poetry.group.type_check.dependencies]
 mypy = "*"
@@ -56,6 +55,10 @@ pyproject-flake8 = "*"
 [tool.poetry.group.fmt.dependencies]
 black = "*"
 isort = "*"
+
+
+[tool.poetry.group.dev.dependencies]
+boto3 = "^1.26.13"
 
 [build-system]
 requires = ["poetry-core"]
