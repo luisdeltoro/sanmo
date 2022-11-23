@@ -12,3 +12,4 @@ __pycache__
 .coverage
 .coverage.*
 terraform.tfvars
+.terraform

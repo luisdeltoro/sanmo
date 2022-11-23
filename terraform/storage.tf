@@ -1,9 +1,9 @@
-variable bucket_name {
-  default = "test-lambda-1"
+variable "bucket_name" {
+  default = "ldeltoro-test-lambda-1"
 }
 
-variable source_code_folder {
-  default = "souce-code"
+variable "source_code_folder" {
+  default = "source-code"
 }
 
 resource "aws_s3_bucket" "test_lambda_1" {
@@ -15,8 +15,8 @@ resource "aws_s3_bucket" "test_lambda_1" {
 }
 
 resource "aws_s3_object" "source_code_folder" {
-  bucket = var.bucket_name
+  bucket = aws_s3_bucket.test_lambda_1.bucket
   acl    = "private"
-  key    = var.source_code_folder + "/"
+  key    = "${var.source_code_folder}/"
   source = "/dev/null"
 }

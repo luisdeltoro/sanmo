@@ -7,7 +7,6 @@ from typing import Any, Dict, List, Optional
 import requests
 
 aephie_ships_url = "https://get-ship-data.aephia.workers.dev/gm/ships"
-store_dir = os.environ["HOME"] + "/samo_store"
 
 
 def lambda_handler(event, context):
@@ -18,6 +17,7 @@ def lambda_handler(event, context):
 
 
 def main() -> None:
+    store_dir = os.environ["HOME"] + "/samo_store"
     ships_str = fetch_ships()
     ships = json.loads(ships_str)
 
@@ -25,7 +25,7 @@ def main() -> None:
     pruned_ships_str_formatted = json.dumps(pruned_ships, indent=2)
 
     print(pruned_ships_str_formatted)
-    store(pruned_ships)
+    store(store_dir, ships)
 
 
 def fetch_ships() -> str:
@@ -47,7 +47,7 @@ def prune_non_relevant_fields(input: List[Dict[str, Any]]) -> List[Dict[str, Any
     return pruned_input
 
 
-def store(ships_price_info: List[Dict[str, Optional[str]]]) -> None:
+def store(store_dir: str, ships_price_info: List[Dict[str, Optional[str]]]) -> None:
     now = datetime.now()
     file_name = now.strftime("%Y-%m-%d_%H:%M:%S.json")
     Path(store_dir + "/" + file_name).write_text(json.dumps(ships_price_info))
