@@ -5,9 +5,10 @@ from typing import Dict, List, Optional
 import boto3
 from botocore.config import Config
 
-config = Config(region_name='us-east-1')
+config = Config(region_name="us-east-1")
 
-s3 = boto3.client('s3', config=config)
+s3 = boto3.client("s3", config=config)
+
 
 def store(store_dir: str, ships_price_info: List[Dict[str, Optional[str]]]) -> None:
     bucket = "star-atlas"
@@ -18,9 +19,9 @@ def store(store_dir: str, ships_price_info: List[Dict[str, Optional[str]]]) -> N
 
     print("result: " + str(result))
 
-    res = result.get('ResponseMetadata')
+    res = result.get("ResponseMetadata")
 
-    if res.get('HTTPStatusCode') == 200:
-        print('File Uploaded Successfully')
+    if res.get("HTTPStatusCode") == 200:
+        print("File Uploaded Successfully")
     else:
-        print('File Not Uploaded')
+        print("File Not Uploaded")
