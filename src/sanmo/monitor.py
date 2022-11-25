@@ -1,23 +1,25 @@
-from datetime import datetime
 import json
 import os
-from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List
 
 import requests
+
+# from local_filesystem_storage import store
+from s3_storage import store
 
 aephie_ships_url = "https://get-ship-data.aephia.workers.dev/gm/ships"
 
 
 def lambda_handler(event, context):
     ships_str = fetch_ships()
+    print(ships_str)
     ships = json.loads(ships_str)
     pruned_ships = prune_non_relevant_fields(ships)
     return pruned_ships
 
 
 def main() -> None:
-    store_dir = os.environ["HOME"] + "/samo_store"
+    store_dir = os.environ["HOME"] + "/sanmo_store"
     ships_str = fetch_ships()
     ships = json.loads(ships_str)
 
@@ -45,12 +47,6 @@ def prune_non_relevant_fields(input: List[Dict[str, Any]]) -> List[Dict[str, Any
         for x in input
     ]
     return pruned_input
-
-
-def store(store_dir: str, ships_price_info: List[Dict[str, Optional[str]]]) -> None:
-    now = datetime.now()
-    file_name = now.strftime("%Y-%m-%d_%H:%M:%S.json")
-    Path(store_dir + "/" + file_name).write_text(json.dumps(ships_price_info))
 
 
 # Allow the script to be run standalone (useful during development).
