@@ -4,8 +4,9 @@ from typing import Any, Dict, List
 
 import requests
 
-# from local_filesystem_storage import store
-from s3_storage import store
+from sanmo.local_filesystem_storage import store
+
+# from sanmo.s3_storage import store
 
 aephie_ships_url = "https://get-ship-data.aephia.workers.dev/gm/ships"
 

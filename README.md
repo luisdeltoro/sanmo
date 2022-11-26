@@ -26,7 +26,20 @@ In ubuntu in can be installed as a snap
 ```
 sudo snap install terraform --classic
 ```
+### Docker
+For installation steps refer to [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
 
+## How to build and run the docker image
+To build the container image:
+```
+docker build --tag sanmo .
+```
+To run the image in a container:
+```
+docker run --rm -v sanmo-store:/home/user/sanmo_store sanmo
+```
 
 ## References
 - https://github.com/typeddjango/awesome-python-typing
+- https://www.yippeecode.com/topics/python-poetry-cheat-sheet/
+- https://referenceguide.dev/cheatsheet/dockerfile

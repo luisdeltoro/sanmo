@@ -56,9 +56,11 @@ pyproject-flake8 = "*"
 black = "*"
 isort = "*"
 
-
 [tool.poetry.group.dev.dependencies]
 boto3 = "^1.26.13"
+
+[tool.poetry.scripts]
+sanmo = "sanmo.monitor:main"
 
 [build-system]
 requires = ["poetry-core"]
