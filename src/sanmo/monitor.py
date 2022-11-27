@@ -4,9 +4,8 @@ from typing import Any, Dict, List
 
 import requests
 
-from sanmo.local_filesystem_storage import store
-
-# from sanmo.s3_storage import store
+from sanmo.local_filesystem_storage import store as store_in_local_fs
+from sanmo.s3_storage import store as store_in_s3
 
 aephie_ships_url = "https://get-ship-data.aephia.workers.dev/gm/ships"
 
@@ -15,6 +14,7 @@ def lambda_handler(event, context):
     ships_str = fetch_ships()
     print(ships_str)
     ships = json.loads(ships_str)
+    store_in_s3("sanmo_store", ships)
     pruned_ships = prune_non_relevant_fields(ships)
     return pruned_ships
 
@@ -28,7 +28,7 @@ def main() -> None:
     pruned_ships_str_formatted = json.dumps(pruned_ships, indent=2)
 
     print(pruned_ships_str_formatted)
-    store(store_dir, ships)
+    store_in_local_fs(store_dir, ships)
 
 
 def fetch_ships() -> str:

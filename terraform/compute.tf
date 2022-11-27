@@ -22,9 +22,6 @@ resource "aws_iam_role" "test_lambda_1_iam_role" {
 EOF
 }
 
-#data "aws_s3_bucket" "test_lambda_1" {
-#  bucket = var.bucket_name
-#}
 
 resource "aws_lambda_function" "test_lambda_1" {
   function_name = "test-lambda-1"
@@ -34,9 +31,15 @@ resource "aws_lambda_function" "test_lambda_1" {
   s3_key    = "${aws_s3_object.source_code_folder.key}${var.lambda_package}"
   handler   = "sanmo.monitor.lambda_handler"
   runtime   = "python3.8"
+  timeout   = 60
 
   tags = {
     Name        = "Test Lambda 1"
     Environment = "Dev"
   }
+}
+
+resource "aws_iam_role_policy_attachment" "star_atlas_s3_bucket_rw_to_test_lambda_1" {
+  role       = aws_iam_role.test_lambda_1_iam_role.name
+  policy_arn = aws_iam_policy.star_atlas_s3_bucket_rw.arn
 }
