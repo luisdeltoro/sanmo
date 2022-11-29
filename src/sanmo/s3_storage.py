@@ -10,10 +10,11 @@ config = Config(region_name="us-east-1")
 s3 = boto3.client("s3", config=config)
 
 
-def store(store_dir: str, ships_price_info: List[Dict[str, Optional[str]]]) -> None:
+def store(
+    store_dir: str, timestamp: datetime, ships_price_info: List[Dict[str, Optional[str]]]
+) -> None:
     bucket = "star-atlas"
-    now = datetime.now()
-    key = store_dir + "/" + now.strftime("%Y-%m-%d_%H:%M:%S.json")
+    key = store_dir + "/" + timestamp.strftime("%Y-%m-%d_%H:%M:%S.json")
     content = json.dumps(ships_price_info)
     result = s3.put_object(Body=content, Bucket=bucket, Key=key)
 

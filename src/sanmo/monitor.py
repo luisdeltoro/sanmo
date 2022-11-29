@@ -1,3 +1,4 @@
+from datetime import datetime
 import json
 import os
 from typing import Any, Dict, List
@@ -12,10 +13,11 @@ aephie_ships_url = "https://get-ship-data.aephia.workers.dev/gm/ships"
 
 def lambda_handler(event, context):
     ships_str = fetch_ships()
+    now = datetime.now()
     print(ships_str)
     ships = json.loads(ships_str)
-    store_in_s3("sanmo_store", ships)
-    pruned_ships = prune_non_relevant_fields(ships)
+    store_in_s3("sanmo_store", now, ships)
+    pruned_ships = reshape(now, ships)
     return pruned_ships
 
 
@@ -24,11 +26,12 @@ def main() -> None:
     ships_str = fetch_ships()
     ships = json.loads(ships_str)
 
-    pruned_ships = prune_non_relevant_fields(ships)
+    now = datetime.now()
+    pruned_ships = reshape(now, ships)
     pruned_ships_str_formatted = json.dumps(pruned_ships, indent=2)
 
     print(pruned_ships_str_formatted)
-    store_in_local_fs(store_dir, ships)
+    store_in_local_fs(store_dir, now, ships)
 
 
 def fetch_ships() -> str:
@@ -36,16 +39,35 @@ def fetch_ships() -> str:
     return response.content.decode()
 
 
-def prune_non_relevant_fields(input: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+def reshape(
+    timestamp: datetime, ships: List[Dict[str, Any]]
+) -> List[Dict[str, Any]]:
     pruned_input = [
         {
             "name": x["name"],
+            "timestamp": timestamp.strftime("%Y-%m-%d_%H:%M:%S"),
             "vwap": x["vwap"],
-            "originationPrice": x["originationPrice"],
-            "bestAsk": x["pricing"].get("lowestAsk"),
-            "askVsVwap": x["pricing"].get("percentageFromVWAPAsk"),
+            "class": x["class"],
+            "rarity": x["rarity"],
+            "totalSupply": x["totalSupply"],
+            "currentPricingInUsdc": {
+                "highestBid": x["pricing"].get("highestBid"),
+                "lowestAsk": x["pricing"].get("lowestAsk"),
+                "buyOrderNum": x["pricing"].get("buyOrderNum"),
+                "sellOrderNum": x["pricing"].get("sellOrderNum"),
+                "priceVsVwapPercentage": x["pricing"].get("percentageFromVWAP"),
+            },
+            "currentPricingInAtlas": {
+                "highestBid": x["pricingATL"].get("highestBidATL"),
+                "highestBidConvertedToUsdc": x["pricingATL"].get("highestBid"),
+                "lowestAsk": x["pricingATL"].get("lowestAskATL"),
+                "lowestAskConvertedToUsdc": x["pricingATL"].get("lowestAsk"),
+                "buyOrderNum": x["pricingATL"].get("buyOrderNum"),
+                "sellOrderNum": x["pricingATL"].get("sellOrderNum"),
+                "priceVsVwapPercentage": x["pricingATL"].get("percentageFromVWAP"),
+            }
         }
-        for x in input
+        for x in ships
     ]
     return pruned_input
 
