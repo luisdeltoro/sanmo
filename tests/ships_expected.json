@@ -6,14 +6,14 @@
     "class": "medium",
     "rarity": "rare",
     "totalSupply": 1900,
-    "currentPricingInUsdc": {
+    "tradingInUsdc": {
       "highestBid": 511,
       "lowestAsk": 533,
       "buyOrderNum": 12,
       "sellOrderNum": 7,
       "priceVsVwapPercentage": -68.68
     },
-    "currentPricingInAtlas": {
+    "tradingInAtlas": {
       "highestBid": 12010,
       "highestBidConvertedToUsdc": 33.2677554,
       "lowestAsk": 218000,
@@ -30,14 +30,14 @@
     "class": "capital",
     "rarity": "legendary",
     "totalSupply": 235,
-    "currentPricingInUsdc": {
+    "tradingInUsdc": {
       "highestBid": 5200,
       "lowestAsk": 6500,
       "buyOrderNum": 8,
       "sellOrderNum": 2,
       "priceVsVwapPercentage": -81.06
     },
-    "currentPricingInAtlas": {
+    "tradingInAtlas": {
       "highestBid": 100000,
       "highestBidConvertedToUsdc": 277,
       "lowestAsk": null,
@@ -54,14 +54,14 @@
     "class": "medium",
     "rarity": "rare",
     "totalSupply": 2221,
-    "currentPricingInUsdc": {
+    "tradingInUsdc": {
       "highestBid": 456,
       "lowestAsk": 599,
       "buyOrderNum": 16,
       "sellOrderNum": 4,
       "priceVsVwapPercentage": -81.43
     },
-    "currentPricingInAtlas": {
+    "tradingInAtlas": {
       "highestBid": 60000,
       "highestBidConvertedToUsdc": 166.2,
       "lowestAsk": 249000,
@@ -78,14 +78,14 @@
     "class": "medium",
     "rarity": "epic",
     "totalSupply": 2200,
-    "currentPricingInUsdc": {
+    "tradingInUsdc": {
       "highestBid": 491,
       "lowestAsk": 645,
       "buyOrderNum": 14,
       "sellOrderNum": 5,
       "priceVsVwapPercentage": -79.77
     },
-    "currentPricingInAtlas": {
+    "tradingInAtlas": {
       "highestBid": 80000,
       "highestBidConvertedToUsdc": 221.60002769999997,
       "lowestAsk": 300000,
@@ -102,14 +102,14 @@
     "class": "x-small",
     "rarity": "uncommon",
     "totalSupply": 34214,
-    "currentPricingInUsdc": {
+    "tradingInUsdc": {
       "highestBid": 27,
       "lowestAsk": 29.8,
       "buyOrderNum": 18,
       "sellOrderNum": 31,
       "priceVsVwapPercentage": -79.78
     },
-    "currentPricingInAtlas": {
+    "tradingInAtlas": {
       "highestBid": 7001,
       "highestBidConvertedToUsdc": 19.39277,
       "lowestAsk": 9998,
@@ -126,14 +126,14 @@
     "class": "medium",
     "rarity": "rare",
     "totalSupply": 1605,
-    "currentPricingInUsdc": {
+    "tradingInUsdc": {
       "highestBid": 561,
       "lowestAsk": 665,
       "buyOrderNum": 15,
       "sellOrderNum": 6,
       "priceVsVwapPercentage": -82.55
     },
-    "currentPricingInAtlas": {
+    "tradingInAtlas": {
       "highestBid": 5002,
       "highestBidConvertedToUsdc": 13.85554,
       "lowestAsk": null,
@@ -150,14 +150,14 @@
     "class": "large",
     "rarity": "legendary",
     "totalSupply": 729,
-    "currentPricingInUsdc": {
+    "tradingInUsdc": {
       "highestBid": 1410,
       "lowestAsk": 2500,
       "buyOrderNum": 8,
       "sellOrderNum": 8,
       "priceVsVwapPercentage": -77.02
     },
-    "currentPricingInAtlas": {
+    "tradingInAtlas": {
       "highestBid": 71000,
       "highestBidConvertedToUsdc": 196.67,
       "lowestAsk": null,
@@ -174,14 +174,14 @@
     "class": "medium",
     "rarity": "rare",
     "totalSupply": 1233,
-    "currentPricingInUsdc": {
+    "tradingInUsdc": {
       "highestBid": 601,
       "lowestAsk": 795,
       "buyOrderNum": 15,
       "sellOrderNum": 6,
       "priceVsVwapPercentage": -81.57
     },
-    "currentPricingInAtlas": {
+    "tradingInAtlas": {
       "highestBid": 122222,
       "highestBidConvertedToUsdc": 338.55494,
       "lowestAsk": 288900,
@@ -198,14 +198,14 @@
     "class": "small",
     "rarity": "rare",
     "totalSupply": 4800,
-    "currentPricingInUsdc": {
+    "tradingInUsdc": {
       "highestBid": 151,
       "lowestAsk": 176,
       "buyOrderNum": 17,
       "sellOrderNum": 6,
       "priceVsVwapPercentage": -86.37
     },
-    "currentPricingInAtlas": {
+    "tradingInAtlas": {
       "highestBid": 40000,
       "highestBidConvertedToUsdc": 110.8,
       "lowestAsk": 79980,
@@ -222,14 +222,14 @@
     "class": "xx-small",
     "rarity": "common",
     "totalSupply": 128780,
-    "currentPricingInUsdc": {
+    "tradingInUsdc": {
       "highestBid": 3.010999,
       "lowestAsk": 4.65,
       "buyOrderNum": 19,
       "sellOrderNum": 50,
       "priceVsVwapPercentage": -83.1
     },
-    "currentPricingInAtlas": {
+    "tradingInAtlas": {
       "highestBid": 1101,
       "highestBidConvertedToUsdc": 3.04977,
       "lowestAsk": 1289,
@@ -246,14 +246,14 @@
     "class": "x-small",
     "rarity": "uncommon",
     "totalSupply": 18812,
-    "currentPricingInUsdc": {
+    "tradingInUsdc": {
       "highestBid": 35,
       "lowestAsk": 40.499,
       "buyOrderNum": 16,
       "sellOrderNum": 28,
       "priceVsVwapPercentage": -87.78
     },
-    "currentPricingInAtlas": {
+    "tradingInAtlas": {
       "highestBid": 9000,
       "highestBidConvertedToUsdc": 24.93,
       "lowestAsk": 15494,
@@ -270,14 +270,14 @@
     "class": "large",
     "rarity": "epic",
     "totalSupply": 772,
-    "currentPricingInUsdc": {
+    "tradingInUsdc": {
       "highestBid": 1076,
       "lowestAsk": 1445,
       "buyOrderNum": 12,
       "sellOrderNum": 6,
       "priceVsVwapPercentage": -85.35
     },
-    "currentPricingInAtlas": {
+    "tradingInAtlas": {
       "highestBid": 200000,
       "highestBidConvertedToUsdc": 554,
       "lowestAsk": 550000,
@@ -294,14 +294,14 @@
     "class": "xx-small",
     "rarity": "common",
     "totalSupply": 129592,
-    "currentPricingInUsdc": {
+    "tradingInUsdc": {
       "highestBid": 2.4,
       "lowestAsk": 2.63,
       "buyOrderNum": 14,
       "sellOrderNum": 48,
       "priceVsVwapPercentage": -87.42
     },
-    "currentPricingInAtlas": {
+    "tradingInAtlas": {
       "highestBid": 950,
       "highestBidConvertedToUsdc": 2.631777,
       "lowestAsk": 1099,
@@ -318,14 +318,14 @@
     "class": "large",
     "rarity": "epic",
     "totalSupply": 1200,
-    "currentPricingInUsdc": {
+    "tradingInUsdc": {
       "highestBid": 1550,
       "lowestAsk": 1695,
       "buyOrderNum": 8,
       "sellOrderNum": 8,
       "priceVsVwapPercentage": -85.39
     },
-    "currentPricingInAtlas": {
+    "tradingInAtlas": {
       "highestBid": 110010,
       "highestBidConvertedToUsdc": 304.72769999999997,
       "lowestAsk": null,
@@ -342,14 +342,14 @@
     "class": "capital",
     "rarity": "legendary",
     "totalSupply": 190,
-    "currentPricingInUsdc": {
+    "tradingInUsdc": {
       "highestBid": 4500,
       "lowestAsk": 17000,
       "buyOrderNum": 5,
       "sellOrderNum": 4,
       "priceVsVwapPercentage": -66.23
     },
-    "currentPricingInAtlas": {
+    "tradingInAtlas": {
       "highestBid": 150000,
       "highestBidConvertedToUsdc": 415.5,
       "lowestAsk": null,
@@ -366,14 +366,14 @@
     "class": "Commander",
     "rarity": "legendary",
     "totalSupply": 130,
-    "currentPricingInUsdc": {
+    "tradingInUsdc": {
       "highestBid": 6700,
       "lowestAsk": 23500,
       "buyOrderNum": 4,
       "sellOrderNum": 2,
       "priceVsVwapPercentage": -83.24
     },
-    "currentPricingInAtlas": {
+    "tradingInAtlas": {
       "highestBid": 57801,
       "highestBidConvertedToUsdc": 160.10877,
       "lowestAsk": null,
@@ -390,14 +390,14 @@
     "class": "Capital",
     "rarity": "legendary",
     "totalSupply": 195,
-    "currentPricingInUsdc": {
+    "tradingInUsdc": {
       "highestBid": 3190,
       "lowestAsk": 5700,
       "buyOrderNum": 4,
       "sellOrderNum": 1,
       "priceVsVwapPercentage": -85.62
     },
-    "currentPricingInAtlas": {
+    "tradingInAtlas": {
       "highestBid": 66000,
       "highestBidConvertedToUsdc": 182.82,
       "lowestAsk": 2599000,
@@ -414,14 +414,14 @@
     "class": "Small",
     "rarity": "epic",
     "totalSupply": 8000,
-    "currentPricingInUsdc": {
+    "tradingInUsdc": {
       "highestBid": 130,
       "lowestAsk": 155,
       "buyOrderNum": 12,
       "sellOrderNum": 9,
       "priceVsVwapPercentage": -85.68
     },
-    "currentPricingInAtlas": {
+    "tradingInAtlas": {
       "highestBid": 35105,
       "highestBidConvertedToUsdc": 97.24085,
       "lowestAsk": 63000,
@@ -438,14 +438,14 @@
     "class": "Small",
     "rarity": "rare",
     "totalSupply": 8000,
-    "currentPricingInUsdc": {
+    "tradingInUsdc": {
       "highestBid": 120,
       "lowestAsk": 143,
       "buyOrderNum": 12,
       "sellOrderNum": 8,
       "priceVsVwapPercentage": -85.86
     },
-    "currentPricingInAtlas": {
+    "tradingInAtlas": {
       "highestBid": 40000,
       "highestBidConvertedToUsdc": 110.8000027699723,
       "lowestAsk": 62700,
@@ -462,14 +462,14 @@
     "class": "Small",
     "rarity": "rare",
     "totalSupply": 8000,
-    "currentPricingInUsdc": {
+    "tradingInUsdc": {
       "highestBid": 102.001,
       "lowestAsk": 125,
       "buyOrderNum": 13,
       "sellOrderNum": 19,
       "priceVsVwapPercentage": -87.32
     },
-    "currentPricingInAtlas": {
+    "tradingInAtlas": {
       "highestBid": 35201,
       "highestBidConvertedToUsdc": 97.5067727699723,
       "lowestAsk": 49000,
@@ -486,14 +486,14 @@
     "class": "Small",
     "rarity": "epic",
     "totalSupply": 7000,
-    "currentPricingInUsdc": {
+    "tradingInUsdc": {
       "highestBid": 97.001,
       "lowestAsk": 109.9,
       "buyOrderNum": 20,
       "sellOrderNum": 13,
       "priceVsVwapPercentage": -86.99
     },
-    "currentPricingInAtlas": {
+    "tradingInAtlas": {
       "highestBid": 35500,
       "highestBidConvertedToUsdc": 98.33500276997229,
       "lowestAsk": 48980,
@@ -510,14 +510,14 @@
     "class": "Medium",
     "rarity": "uncommon",
     "totalSupply": 1900,
-    "currentPricingInUsdc": {
+    "tradingInUsdc": {
       "highestBid": 385,
       "lowestAsk": 449,
       "buyOrderNum": 13,
       "sellOrderNum": 5,
       "priceVsVwapPercentage": -83.97
     },
-    "currentPricingInAtlas": {
+    "tradingInAtlas": {
       "highestBid": 75000,
       "highestBidConvertedToUsdc": 207.75,
       "lowestAsk": 215000,
@@ -534,14 +534,14 @@
     "class": "Capital",
     "rarity": "legendary",
     "totalSupply": 210,
-    "currentPricingInUsdc": {
+    "tradingInUsdc": {
       "highestBid": 4300,
       "lowestAsk": 4840,
       "buyOrderNum": 7,
       "sellOrderNum": 2,
       "priceVsVwapPercentage": -87.5
     },
-    "currentPricingInAtlas": {
+    "tradingInAtlas": {
       "highestBid": 78000,
       "highestBidConvertedToUsdc": 216.06,
       "lowestAsk": 2999000,
@@ -558,14 +558,14 @@
     "class": "Commander",
     "rarity": "anomaly",
     "totalSupply": 110,
-    "currentPricingInUsdc": {
+    "tradingInUsdc": {
       "highestBid": 7000,
       "lowestAsk": 24700,
       "buyOrderNum": 5,
       "sellOrderNum": 2,
       "priceVsVwapPercentage": -84.94
     },
-    "currentPricingInAtlas": {
+    "tradingInAtlas": {
       "highestBid": 70401,
       "highestBidConvertedToUsdc": 195.01076999999998,
       "lowestAsk": null,
@@ -582,14 +582,14 @@
     "class": "XX-Small",
     "rarity": "common",
     "totalSupply": 375000,
-    "currentPricingInUsdc": {
+    "tradingInUsdc": {
       "highestBid": 1.650999,
       "lowestAsk": 2.4,
       "buyOrderNum": 22,
       "sellOrderNum": 22,
       "priceVsVwapPercentage": -87.72
     },
-    "currentPricingInAtlas": {
+    "tradingInAtlas": {
       "highestBid": 700,
       "highestBidConvertedToUsdc": 1.9389999999999998,
       "lowestAsk": 735,
@@ -606,14 +606,14 @@
     "class": "small",
     "rarity": "rare",
     "totalSupply": 12000,
-    "currentPricingInUsdc": {
+    "tradingInUsdc": {
       "highestBid": 130.101,
       "lowestAsk": 185,
       "buyOrderNum": 8,
       "sellOrderNum": 9,
       "priceVsVwapPercentage": -79.54
     },
-    "currentPricingInAtlas": {
+    "tradingInAtlas": {
       "highestBid": 32500,
       "highestBidConvertedToUsdc": 90.02500277,
       "lowestAsk": 64000,
@@ -630,14 +630,14 @@
     "class": "xx-small",
     "rarity": "epic",
     "totalSupply": 275000,
-    "currentPricingInUsdc": {
+    "tradingInUsdc": {
       "highestBid": 7.101,
       "lowestAsk": 12.4,
       "buyOrderNum": 12,
       "sellOrderNum": 15,
       "priceVsVwapPercentage": -72.14
     },
-    "currentPricingInAtlas": {
+    "tradingInAtlas": {
       "highestBid": 2900,
       "highestBidConvertedToUsdc": 8.033307469999999,
       "lowestAsk": 3863,
@@ -654,14 +654,14 @@
     "class": "x-small",
     "rarity": "common",
     "totalSupply": 122000,
-    "currentPricingInUsdc": {
+    "tradingInUsdc": {
       "highestBid": 17.01,
       "lowestAsk": 18.95,
       "buyOrderNum": 10,
       "sellOrderNum": 11,
       "priceVsVwapPercentage": -70.03
     },
-    "currentPricingInAtlas": {
+    "tradingInAtlas": {
       "highestBid": 6200,
       "highestBidConvertedToUsdc": 17.1740277,
       "lowestAsk": 6595,
@@ -678,14 +678,14 @@
     "class": "large",
     "rarity": "epic",
     "totalSupply": 820,
-    "currentPricingInUsdc": {
+    "tradingInUsdc": {
       "highestBid": 2180,
       "lowestAsk": 3999,
       "buyOrderNum": 6,
       "sellOrderNum": 6,
       "priceVsVwapPercentage": -77.48
     },
-    "currentPricingInAtlas": {
+    "tradingInAtlas": {
       "highestBid": 12500,
       "highestBidConvertedToUsdc": 34.6250277,
       "lowestAsk": 1402318,
@@ -702,14 +702,14 @@
     "class": "small",
     "rarity": "rare",
     "totalSupply": 12200,
-    "currentPricingInUsdc": {
+    "tradingInUsdc": {
       "highestBid": 150.001,
       "lowestAsk": 250,
       "buyOrderNum": 9,
       "sellOrderNum": 6,
       "priceVsVwapPercentage": -78.86
     },
-    "currentPricingInAtlas": {
+    "tradingInAtlas": {
       "highestBid": 701,
       "highestBidConvertedToUsdc": 1.9404404,
       "lowestAsk": 104415,
@@ -726,14 +726,14 @@
     "class": "capital",
     "rarity": "epic",
     "totalSupply": 380,
-    "currentPricingInUsdc": {
+    "tradingInUsdc": {
       "highestBid": 3500,
       "lowestAsk": 6900,
       "buyOrderNum": 6,
       "sellOrderNum": 7,
       "priceVsVwapPercentage": -84.38
     },
-    "currentPricingInAtlas": {
+    "tradingInAtlas": {
       "highestBid": 91000,
       "highestBidConvertedToUsdc": 252.07,
       "lowestAsk": 3795254,
@@ -750,14 +750,14 @@
     "class": "large",
     "rarity": "epic",
     "totalSupply": 1600,
-    "currentPricingInUsdc": {
+    "tradingInUsdc": {
       "highestBid": 1405,
       "lowestAsk": 2790,
       "buyOrderNum": 5,
       "sellOrderNum": 5,
       "priceVsVwapPercentage": -80.45
     },
-    "currentPricingInAtlas": {
+    "tradingInAtlas": {
       "highestBid": 41000,
       "highestBidConvertedToUsdc": 113.57,
       "lowestAsk": 1112583,
@@ -774,14 +774,14 @@
     "class": "small",
     "rarity": "uncommon",
     "totalSupply": 14440,
-    "currentPricingInUsdc": {
+    "tradingInUsdc": {
       "highestBid": 150,
       "lowestAsk": 295.999,
       "buyOrderNum": 11,
       "sellOrderNum": 10,
       "priceVsVwapPercentage": -76.35
     },
-    "currentPricingInAtlas": {
+    "tradingInAtlas": {
       "highestBid": 40010,
       "highestBidConvertedToUsdc": 110.82800746997229,
       "lowestAsk": 89999,
@@ -798,14 +798,14 @@
     "class": "medium",
     "rarity": "uncommon",
     "totalSupply": 5200,
-    "currentPricingInUsdc": {
+    "tradingInUsdc": {
       "highestBid": 460,
       "lowestAsk": 515,
       "buyOrderNum": 16,
       "sellOrderNum": 6,
       "priceVsVwapPercentage": -79.88
     },
-    "currentPricingInAtlas": {
+    "tradingInAtlas": {
       "highestBid": 65100,
       "highestBidConvertedToUsdc": 180.327,
       "lowestAsk": 245000,
@@ -822,14 +822,14 @@
     "class": "small",
     "rarity": "uncommon",
     "totalSupply": 11200,
-    "currentPricingInUsdc": {
+    "tradingInUsdc": {
       "highestBid": 131,
       "lowestAsk": 650,
       "buyOrderNum": 6,
       "sellOrderNum": 3,
       "priceVsVwapPercentage": -64.23
     },
-    "currentPricingInAtlas": {
+    "tradingInAtlas": {
       "highestBid": 25001,
       "highestBidConvertedToUsdc": 69.251385,
       "lowestAsk": 116998,
@@ -846,14 +846,14 @@
     "class": "capital",
     "rarity": "legendary",
     "totalSupply": 375,
-    "currentPricingInUsdc": {
+    "tradingInUsdc": {
       "highestBid": 2603,
       "lowestAsk": 29300,
       "buyOrderNum": 3,
       "sellOrderNum": 3,
       "priceVsVwapPercentage": -51.05
     },
-    "currentPricingInAtlas": {
+    "tradingInAtlas": {
       "highestBid": 125000,
       "highestBidConvertedToUsdc": 346.25,
       "lowestAsk": 3233996,
@@ -870,14 +870,14 @@
     "class": "medium",
     "rarity": "epic",
     "totalSupply": 4400,
-    "currentPricingInUsdc": {
+    "tradingInUsdc": {
       "highestBid": 350.001,
       "lowestAsk": 2475,
       "buyOrderNum": 7,
       "sellOrderNum": 2,
       "priceVsVwapPercentage": -49.04
     },
-    "currentPricingInAtlas": {
+    "tradingInAtlas": {
       "highestBid": 15001,
       "highestBidConvertedToUsdc": 41.551384999999996,
       "lowestAsk": 273179,
@@ -894,14 +894,14 @@
     "class": "medium",
     "rarity": "uncommon",
     "totalSupply": 5900,
-    "currentPricingInUsdc": {
+    "tradingInUsdc": {
       "highestBid": 310.001,
       "lowestAsk": 1774.5,
       "buyOrderNum": 9,
       "sellOrderNum": 4,
       "priceVsVwapPercentage": -44.59
     },
-    "currentPricingInAtlas": {
+    "tradingInAtlas": {
       "highestBid": 60000,
       "highestBidConvertedToUsdc": 166.198615,
       "lowestAsk": 195916,
@@ -918,14 +918,14 @@
     "class": "xx-small",
     "rarity": "common",
     "totalSupply": 315000,
-    "currentPricingInUsdc": {
+    "tradingInUsdc": {
       "highestBid": 6.011,
       "lowestAsk": 7.9,
       "buyOrderNum": 8,
       "sellOrderNum": 11,
       "priceVsVwapPercentage": -65.22
     },
-    "currentPricingInAtlas": {
+    "tradingInAtlas": {
       "highestBid": 2050,
       "highestBidConvertedToUsdc": 5.6785,
       "lowestAsk": 2208,
@@ -942,14 +942,14 @@
     "class": "commander",
     "rarity": "legendary",
     "totalSupply": 190,
-    "currentPricingInUsdc": {
+    "tradingInUsdc": {
       "highestBid": 1250,
       "lowestAsk": 97500,
       "buyOrderNum": 6,
       "sellOrderNum": 2,
       "priceVsVwapPercentage": -51.65
     },
-    "currentPricingInAtlas": {
+    "tradingInAtlas": {
       "highestBid": 10001,
       "highestBidConvertedToUsdc": 27.702769999999997,
       "lowestAsk": 10761589,
@@ -966,14 +966,14 @@
     "class": "large",
     "rarity": "epic",
     "totalSupply": 1400,
-    "currentPricingInUsdc": {
+    "tradingInUsdc": {
       "highestBid": 1200,
       "lowestAsk": 9600,
       "buyOrderNum": 7,
       "sellOrderNum": 2,
       "priceVsVwapPercentage": -46.93
     },
-    "currentPricingInAtlas": {
+    "tradingInAtlas": {
       "highestBid": 75000,
       "highestBidConvertedToUsdc": 207.75,
       "lowestAsk": 1247726,
@@ -990,14 +990,14 @@
     "class": "capital",
     "rarity": "legendary",
     "totalSupply": 460,
-    "currentPricingInUsdc": {
+    "tradingInUsdc": {
       "highestBid": 1011,
       "lowestAsk": 30000,
       "buyOrderNum": 6,
       "sellOrderNum": 2,
       "priceVsVwapPercentage": -50.05
     },
-    "currentPricingInAtlas": {
+    "tradingInAtlas": {
       "highestBid": 20000,
       "highestBidConvertedToUsdc": 55.4,
       "lowestAsk": 4153399,
