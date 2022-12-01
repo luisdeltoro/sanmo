@@ -14,7 +14,7 @@ variable "sanmo_storage_folder" {
   default = "sanmo_store"
 }
 
-resource "aws_s3_bucket" "test_lambda_1" {
+resource "aws_s3_bucket" "price_fetcher" {
   bucket = var.lambda_bucket_name
   tags = {
     Name        = "Test Lambda 1 - S3 Bucket"
@@ -22,8 +22,8 @@ resource "aws_s3_bucket" "test_lambda_1" {
   }
 }
 
-resource "aws_s3_object" "source_code_folder" {
-  bucket = aws_s3_bucket.test_lambda_1.bucket
+resource "aws_s3_object" "price_fetcher__source_code_folder" {
+  bucket = aws_s3_bucket.price_fetcher.bucket
   acl    = "private"
   key    = "${var.source_code_folder}/"
   source = "/dev/null"
