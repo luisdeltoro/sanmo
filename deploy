@@ -1,10 +1,12 @@
 #!/bin/bash
 
-LAMBDA_NAME='test-lambda-1'
+LAMBDA_NAME_1='test-lambda-1'
+LAMBDA_NAME_2='test-lambda-2'
 LAMBDA_REGION='us-east-1'
 S3_BUCKET='ldeltoro-test-lambda-1'
 S3_KEY_PREFIX='source-code'
 VERSION=`cat pyproject.toml | grep -E "^version =" | sed 's/^version = "\([0-9\.]*\)".*$/\1/'`
 
-aws s3 cp dist/lambda-${VERSION}.zip s3://${S3_BUCKET}/${S3_KEY_PREFIX}/${LAMBDA_NAME}-${VERSION}.zip
-aws lambda --region $LAMBDA_REGION  update-function-code --function-name $LAMBDA_NAME --s3-bucket $S3_BUCKET --s3-key ${S3_KEY_PREFIX}/${LAMBDA_NAME}-${VERSION}.zip
+aws s3 cp dist/lambda-${VERSION}.zip s3://${S3_BUCKET}/${S3_KEY_PREFIX}/${LAMBDA_NAME_1}-${VERSION}.zip
+aws lambda --region $LAMBDA_REGION  update-function-code --function-name $LAMBDA_NAME_1 --s3-bucket $S3_BUCKET --s3-key ${S3_KEY_PREFIX}/${LAMBDA_NAME_1}-${VERSION}.zip
+aws lambda --region $LAMBDA_REGION  update-function-code --function-name $LAMBDA_NAME_2 --s3-bucket $S3_BUCKET --s3-key ${S3_KEY_PREFIX}/${LAMBDA_NAME_1}-${VERSION}.zip

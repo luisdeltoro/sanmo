@@ -60,7 +60,7 @@ isort = "*"
 boto3 = "^1.26.13"
 
 [tool.poetry.scripts]
-sanmo = "sanmo.monitor:main"
+sanmo = "sanmo.price_fetcher:main"
 
 [build-system]
 requires = ["poetry-core"]
