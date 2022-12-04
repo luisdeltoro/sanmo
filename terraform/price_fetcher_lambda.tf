@@ -53,16 +53,16 @@ resource "aws_iam_role_policy_attachment" "star_atlas_s3_bucket_rw_to_price_fetc
   policy_arn = aws_iam_policy.star_atlas_s3_bucket_rw.arn
 }
 
-resource "aws_cloudwatch_event_rule" "once_a_day_trigger" {
+resource "aws_cloudwatch_event_rule" "price_fetcher_lambda_trigger" {
   event_bus_name      = "default"
   is_enabled          = "true"
-  name                = "${var.price_fetcher_lambda_name}-daily-trigger"
-  schedule_expression = "cron(0 10 * * ? *)"
+  name                = "${var.price_fetcher_lambda_name}-trigger"
+  schedule_expression = "cron(0 * * * ? *)"
 }
 
-resource "aws_cloudwatch_event_target" "price_fetcher_lambda_daily_trigger" {
+resource "aws_cloudwatch_event_target" "price_fetcher_lambda" {
   arn  = aws_lambda_function.price_fetcher.arn
-  rule = aws_cloudwatch_event_rule.once_a_day_trigger.name
+  rule = aws_cloudwatch_event_rule.price_fetcher_lambda_trigger.name
 }
 
 resource "aws_lambda_permission" "allow_cloudwatch_to_invoke_price_fetcher_lambda" {
@@ -70,5 +70,5 @@ resource "aws_lambda_permission" "allow_cloudwatch_to_invoke_price_fetcher_lambd
   action        = "lambda:InvokeFunction"
   function_name = aws_lambda_function.price_fetcher.function_name
   principal     = "events.amazonaws.com"
-  source_arn    = aws_cloudwatch_event_rule.once_a_day_trigger.arn
+  source_arn    = aws_cloudwatch_event_rule.price_fetcher_lambda_trigger.arn
 }
