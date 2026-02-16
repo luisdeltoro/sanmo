@@ -50,10 +50,18 @@ def lambda_handler(event, context):
         print(f"timestamp={timestamp} ships={str(ships)}")
         reshaped_ships = reshape(timestamp, ships)
         print(f"reshaped_ships={str(reshaped_ships)}")
+        names = [
+            (rs["name"], f"{rs['name']} ({rs['class']} - {rs['rarity']}) | {rs['vwap']} | {rs['totalSupply']}")
+            for rs in reshaped_ships
+        ]
+        print(f"names={str(names)}")
         metrics = convert_to_metrics(reshaped_ships, fields)
         print(f"metrics={str(metrics)}")
+        metric_names = set()
         for metric in metrics:
+            metric_names.add(metric.name)
             emit_metric(metric)
+        print(f"names={str(metric_names)}")
     except Exception as e:
         print("Error getting object {} from bucket {}".format(key, bucket))
         print(e)

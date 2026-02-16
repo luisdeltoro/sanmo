@@ -39,6 +39,37 @@ To run the image in a container:
 docker run --rm -v sanmo-store:/home/user/sanmo_store sanmo
 ```
 
+## How to build, run tests, ...
+Run inside the poetry virtual environment
+```
+poetry run python3 src/sanmo/price_fetcher.py
+```
+
+Start a shell on the poetry virtual environment
+```
+poetry shell
+```
+
+Add dependencies
+```
+poetry add black
+```
+
+Install dependencies
+```
+poetry install
+```
+
+Build archive
+```
+poetry build
+```
+
+Show dependency tree
+```
+poetry show --tree
+```
+
 ## References
 - https://github.com/typeddjango/awesome-python-typing
 - https://www.yippeecode.com/topics/python-poetry-cheat-sheet/

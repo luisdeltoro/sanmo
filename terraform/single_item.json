@@ -1,0 +1,100 @@
+
+    {
+      "height": 8,
+      "width": 11,
+      "y": 0,
+      "x": 0,
+      "type": "metric",
+      "properties": {
+        "view": "timeSeries",
+        "stacked": false,
+        "metrics": [
+          [ "StarAtlas", "ITEM", "price-type", "lowestAsk", "category", "tradingInAtlas" ],
+          [ "...", "highestBid", ".", "." ]
+        ],
+        "region": "us-east-1",
+        "title": "NAME - Prices (Atlas)",
+        "period": 300,
+        "yAxis": {
+          "left": {
+            "min": 0
+          }
+        }
+      }
+    },
+    {
+      "height": 8,
+      "width": 12,
+      "y": 0,
+      "x": 11,
+      "type": "metric",
+      "properties": {
+        "view": "timeSeries",
+        "stacked": false,
+        "metrics": [
+          [ "StarAtlas", "ITEM", "price-type", "highestBid", "category", "tradingInUsdc" ],
+          [ "...", "lowestAsk", ".", "." ],
+          [ "...", "lowestAskConvertedToUsdc", ".", "tradingInAtlas" ],
+          [ "...", "highestBidConvertedToUsdc", ".", "." ]
+        ],
+        "region": "us-east-1",
+        "yAxis": {
+          "left": {
+            "min": 0,
+            "showUnits": false,
+            "label": "USDC"
+          }
+        },
+        "title": "NAME - Prices (USDC)"
+      }
+    },
+    {
+      "height": 8,
+      "width": 11,
+      "y": 8,
+      "x": 0,
+      "type": "metric",
+      "properties": {
+        "view": "timeSeries",
+        "metrics": [
+          [ "StarAtlas", "ITEM", "price-type", "buyOrderNum", "category", "tradingInUsdc" ],
+          [ "...", "sellOrderNum", ".", "." ],
+          [ "...", "buyOrderNum", ".", "tradingInAtlas" ],
+          [ "...", "sellOrderNum", ".", "." ]
+        ],
+        "region": "us-east-1",
+        "stacked": false,
+        "yAxis": {
+          "left": {
+            "min": 0
+          }
+        },
+        "title": "NAME - Orders"
+      }
+    },
+    {
+      "height": 8,
+      "width": 12,
+      "y": 8,
+      "x": 11,
+      "type": "metric",
+      "properties": {
+        "view": "timeSeries",
+        "stacked": true,
+        "metrics": [
+          [ "StarAtlas", "ITEM", "price-type", "priceVsVwapPercentage", "category", "tradingInAtlas" ],
+          [ "...", "tradingInUsdc" ]
+        ],
+        "region": "us-east-1",
+        "period": 300,
+        "yAxis": {
+          "left": {
+            "min": -200,
+            "max": 200,
+            "showUnits": false
+          }
+        },
+        "setPeriodToTimeRange": true,
+        "title": "NAME - Percentage Discount (ref: VWAP)"
+      }
+    },

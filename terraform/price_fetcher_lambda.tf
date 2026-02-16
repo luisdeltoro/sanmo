@@ -57,7 +57,7 @@ resource "aws_cloudwatch_event_rule" "price_fetcher_lambda_trigger" {
   event_bus_name      = "default"
   is_enabled          = "true"
   name                = "${var.price_fetcher_lambda_name}-trigger"
-  schedule_expression = "cron(0 * * * ? *)"
+  schedule_expression = "cron(0 * * * ? *)"  # Every hour
 }
 
 resource "aws_cloudwatch_event_target" "price_fetcher_lambda" {
